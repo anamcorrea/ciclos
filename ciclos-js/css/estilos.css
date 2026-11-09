@@ -1,0 +1,152 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #23332d;
+  background: #f3f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: min(100% - 2rem, 920px);
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+  line-height: 1.6;
+}
+
+header {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  color: #fff;
+  background: #24594a;
+  border-radius: 8px;
+}
+
+header a {
+  color: #e6f3a5;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.7rem, 5vw, 2.4rem);
+}
+
+h2 {
+  margin-top: 0;
+  color: #24594a;
+}
+
+header p {
+  margin: 0;
+}
+
+main > section,
+body > section {
+  margin: 1rem 0;
+  padding: 1.4rem 1.5rem;
+  background: #fff;
+  border: 1px solid #dce4dc;
+  border-radius: 8px;
+}
+
+body > h1 {
+  margin: 0 0 1.5rem;
+  padding: 1.5rem 1.75rem;
+  color: #fff;
+  background: #24594a;
+  border-radius: 8px;
+}
+
+a {
+  color: #176b58;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #ad452f;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 36rem;
+  margin: 1rem 0;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.75rem;
+  color: inherit;
+  font: inherit;
+  background: #fbfcf9;
+  border: 1px solid #aebdb2;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #e8bc5a;
+  outline-offset: 2px;
+}
+
+button {
+  justify-self: start;
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  background: #ad452f;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #873722;
+}
+
+strong {
+  color: #24594a;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: min(100% - 1rem, 920px);
+    padding-top: 0.5rem;
+  }
+
+  header,
+  main > section,
+  body > section,
+  body > h1 {
+    padding: 1.1rem;
+  }
+}
